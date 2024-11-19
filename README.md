@@ -94,7 +94,10 @@ Dentro de nuestro directorio de practica 4 nos creamos el archivo `touch index.h
 ![](imagenes/trabajogit2.png)
 
 3. Visualiza el estado del proyecto ( puedes hacer tambien un git status corto ``git status --s` o `git status --short``). 
+![](imagenes/trabajogit3.png)
+![](imagenes/trabajogit33.png)
 4. Puedes ver como te indica que tienes varias operaciones por hacer: git add, git commit...
+
 5. Añade el archivo index.html al proyecto (git add).
 6. Haz un commit (Puedes hacer ``commit -am "commentario del commit"` de esta manera se añaden las modificaciones de archivos y se hace el commit con el mensaje indicado sin abrir el archivo y tener que escribir nosotros).
 7. Vuelve a comprobar el estado del proyecto. Puedes ver como ya debería de estar todo en orden.
