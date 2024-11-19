@@ -29,7 +29,7 @@ Crea un nuevo repositorio público con nombre __PPS-Unidad0Actividad4-TuNombre__
 
 Sigue las indicaciones de github para crear tu nuevo repositorio en linea de comandos, esto es:
 
-![](images/creaRepo.png)
+![](imagenes/creaRepo.png)
 
 Viene a ser como esto, pero cambiando el nombre de usuario y de repositorio:
 
@@ -47,33 +47,52 @@ git push -u origin main
 
 
 1. Haz un listado en forma de arbol (tree -a) de todos los archivos del directorio.
-![](images/tree.png)
+![](imagenes/tree.png)
 
 
 2. Crea un archivo con nombre README (si no existe todavía) y lo añades al proyecto.
-![](images/iniciandoproyecto2.png)
+![](imagenes/iniciandoproyecto2.png)
  
 
 3. Comprueba el estado de git (`git status -s` o `git status --short``. 
 
-![](images/iniciandoproyecto3.png)
+![](imagenes/iniciandoproyecto3.png)
 4. Escribe en él una descripción de la actividad y vuelves a comprobar su estado.
+![](imagenes/iniciandoproyecto4.png)
 
 ## Ignorando archivos
 
+
 1. Crea una carpeta con nombre Excluded. En ella vamos a colocar la documentación que no queremos que sea rastreada y subida al repositorio.
+![](imagenes/ignorandoarchivos1.png)
+
 2. Para comprobar que funciona crea algún archivo vacío allí y también crea un archivo con nombre excluido.txt en el directorio principal del repositorio.
+![](imagenes/ignorandoarchivos2.png)
+![](imagenes/ignorandoarchivos22.png)
+
 3. Crea un archivo con nombre .gitignore en el cual vamos a poner los archivos y directorios que no queremos que se rastreen.
+![](imagenes/ignorandoarchivos3.png)
+
+
+
 4. Indica en el .gitignore que los archivos con extensión .txt y el directorio Excluded no deben de ser rastreados ni sincronizados..
+![](imagenes/ignorandoarchivos33.png)
+
 5. Comprueba el estado del proyecto y comprueba que no nos indica nada del seguimiento de dichos archivos.
+![](imagenes/ignorandoarchivos5.png)
 
 ## Trabajo con Git
 
 1. Crea un archivo con nombre index.html. 
+Dentro de nuestro directorio de practica 4 nos creamos el archivo `touch index.html`.
+![](imagenes/trabajogit1.png)
+
 2. Introduce el código html para que nos muestre un mensaje de Hola mundo con tu nombre. Uno sencillo sería este:
 ~~~
    <H1>Hola $USER¡¡¡ ¿Qué tal te encuentras?</H1>
 ~~~   
+![](imagenes/trabajogit2.png)
+
 3. Visualiza el estado del proyecto ( puedes hacer tambien un git status corto ``git status --s` o `git status --short``). 
 4. Puedes ver como te indica que tienes varias operaciones por hacer: git add, git commit...
 5. Añade el archivo index.html al proyecto (git add).
