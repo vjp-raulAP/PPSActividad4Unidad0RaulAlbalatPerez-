@@ -153,22 +153,67 @@ Renombra index.html.save a index.html con el comando git mv:
 
 
 9. Para pull y push, haz un push y comprueba cómo han subido los archivos a github.com.
-
+![](imagenes/seguimostrabgit9.png)
 10.  Modifica el archivo index.php desde la página de github.com y haz un pull y comprueba cómo se ha modificado la página web en nuestro navegador.
+![](imagenes/seguimostrabgit10.png)
+hacemos un pull con los cambios realizados en github y los guardamos.
+![](imagenes/seguimostrabgit101.png)
+comprobamos que se han modificado los cambios
+![](imagenes/seguimostrabgit102.png)
+ 
+
 
 ## Git log
 1. Mira la página de (Git Book sobre los comandos git log)[https://git-scm.com/book/es/v2/Fundamentos-de-Git-Ver-el-Historial-de-Confirmaciones]
 2. Muestra los logs 
+
+Para ver los log de todos los commit usamos git log
+![](imagenes/gitlog2.png)
 3. Muestra los logs de los últimos 3 commits
+![](imagenes/gitlog3.png)
+
 4. Muestra los logs utilizando el modificador ``--pretty`
+--pretty: Si quieres ver los logs en un formato más amigable que muestre solo los mensajes de commit, puedes usar --pretty con el formato "%h %s %cr" que muestra el hash corto del commit, el mensaje del commit y la fecha de cambio:
+![](imagenes/gitlog4.png)
+
 5. Muestra los logs de los últimos 2 commits donde se vean las diferencias de cada una de las entradas.
+Este comando te mostrará una lista de archivos modificados junto con los nombres de los archivos y el estado de los cambios.
+![](imagenes/gitlog5.png)
 6. Muestra los logs de las modificaciones realizadas en el último día
+Esto te mostrará los commits que ocurrieron dentro del último día desde la fecha actual.
+![](imagenes/gitlog6.png)
+
+
 ## Ramas
 
 1. Lista las ramas existentes.
+Para listar las ramas existentes usamos git branch
+![](imagenes/ramas1.png)
+
 2. Crea una nueva rama con nombre Vers1 a partir de la rama actual.
+Para crear una nueva rama llamada Vers1 desde la rama actual y cambiar a esa nueva rama, utilizamos: git checkout -b Vers1
+![](imagenes/ramas2.png)
+Este comando:
+   +  Crea una nueva rama llamada Vers1.
+   +  Te cambia automáticamente a la nueva rama Vers1
+
+
 3. Haz una modificación del index.html y guardas modificaciones.
-3. Sube los cambios al respositorio remoto a la rama Vers1 `git push origin Vers1` (En este caso podemos ver cómo el index.html de la rama `m̀ain` y `Vers1` son diferentes.
+hacemos la modificación del index.html
+![](imagenes/ramas3.png)
+Y hacemos un git status para verificar el estado de los cambios
+![](imagenes/ramas31.png)
+Hacemos un git add y un commit para guardar los cambios
+![](imagenes/ramas32.png) 
+
+
+4. Sube los cambios al respositorio remoto a la rama Vers1 `git push origin Vers1` (En este caso podemos ver cómo el index.html de la rama `m̀ain` y `Vers1` son diferentes.
+subimos los cambios a la rama remota Vers1 usando el siguiente comando:git push origin Vers1
+![](imagenes/ramas4.png)
+Comprobamos que se ha guardado en la rama nueva los cambios.
+![](imagenes/ramas41.png)
+
+
 
 ## Entrega
 
