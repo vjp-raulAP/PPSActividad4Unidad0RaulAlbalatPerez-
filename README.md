@@ -1,4 +1,4 @@
-# PPSActividad4Unidad0RaulAlbalatPerez-
+# PPSActividad4Unidad0RaulAlbalatPerez
 
 
 Vamos a hacer una nueva actividad con git. En esta ocasión crearemos un pequeño proyecto de una página web que podremos visualizar creando un pequeño servidor con php.
@@ -56,7 +56,7 @@ git push -u origin main
 
 3. Comprueba el estado de git (`git status -s` o `git status --short``. 
 
-
+![](images/iniciandoproyecto3.png)
 4. Escribe en él una descripción de la actividad y vuelves a comprobar su estado.
 
 ## Ignorando archivos
