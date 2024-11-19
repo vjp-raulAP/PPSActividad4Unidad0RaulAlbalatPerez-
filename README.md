@@ -45,9 +45,18 @@ git push -u origin main
 ---
 ## Iniciando Proyecto 
 
+
 1. Haz un listado en forma de arbol (tree -a) de todos los archivos del directorio.
+![](images/tree.png)
+
+
 2. Crea un archivo con nombre README (si no existe todavía) y lo añades al proyecto.
+![](images/iniciandoproyecto2.png)
+ 
+
 3. Comprueba el estado de git (`git status -s` o `git status --short``. 
+
+
 4. Escribe en él una descripción de la actividad y vuelves a comprobar su estado.
 
 ## Ignorando archivos
