@@ -19,27 +19,27 @@ color.interactive=auto
 color.diff=auto
 ~~~ 
 
-![](images/imagen1.png)
+![](images/imagen1gloval.png)
 
 ## Creación de Proyecto y repositorio
 
-Para ello crea una nueva carpeta en tu directorio de git de PPS, con el nombre de esta actividad ___PPS-Unidad0Actividad4-TuNombre___
+Para ello crea una nueva carpeta en tu directorio de git de PPS, con el nombre de esta actividad ___PPSActividad4Unidad0RaulAlbalatPerez___
 
-Crea un nuevo repositorio público con nombre __PPS-Unidad0Actividad4-TuNombre__
+Creo un nuevo repositorio público con nombre **PPSActividad4Unidad0RaulAlbalatPerez-** 
 
 Sigue las indicaciones de github para crear tu nuevo repositorio en linea de comandos, esto es:
 
-![](imagenes/creaRepo.png)
+![](imagenes/crearrepositorio4.png)
 
 Viene a ser como esto, pero cambiando el nombre de usuario y de repositorio:
 
 ~~~
-echo "# PPS-Unidad0Actividad4-JoseMi" >> README.md
+echo "# PPSActividad4Unidad0RaulAlbalatPerez-> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:jmmedinac03vjp/PPS-Unidad0Actividad4-JoseMi.git
+git remote add origin git@github.com:vjp-raulAP/PPSActividad4Unidad0RaulAlbalatPerez-.git
 git push -u origin main
 ~~~
 ---
@@ -47,6 +47,7 @@ git push -u origin main
 
 
 1. Haz un listado en forma de arbol (tree -a) de todos los archivos del directorio.
+	+ En la imagen aparece un listado de las carpetas creadas y las ramas creadas
 ![](imagenes/tree.png)
 
 
@@ -57,25 +58,30 @@ git push -u origin main
 3. Comprueba el estado de git (`git status -s` o `git status --short``. 
 
 ![](imagenes/iniciandoproyecto3.png)
+
 4. Escribe en él una descripción de la actividad y vuelves a comprobar su estado.
 ![](imagenes/iniciandoproyecto4.png)
+
 
 ## Ignorando archivos
 
 
-1. Crea una carpeta con nombre Excluded. En ella vamos a colocar la documentación que no queremos que sea rastreada y subida al repositorio.
+1. Crea una carpeta con nombre** Excluded**. En ella vamos a colocar la documentación que no queremos que sea rastreada y subida al repositorio.
++ Creo la carpeta **Excluded** dentro de 
 ![](imagenes/ignorandoarchivos1.png)
 
 2. Para comprobar que funciona crea algún archivo vacío allí y también crea un archivo con nombre excluido.txt en el directorio principal del repositorio.
+
 ![](imagenes/ignorandoarchivos2.png)
 ![](imagenes/ignorandoarchivos22.png)
 
 3. Crea un archivo con nombre .gitignore en el cual vamos a poner los archivos y directorios que no queremos que se rastreen.
+
 ![](imagenes/ignorandoarchivos3.png)
 
 
 
-4. Indica en el .gitignore que los archivos con extensión .txt y el directorio Excluded no deben de ser rastreados ni sincronizados..
+4. Indica en el** .gitignore** que los archivos con extensión .txt y el directorio Excluded no deben de ser rastreados ni sincronizados..
 ![](imagenes/ignorandoarchivos33.png)
 
 5. Comprueba el estado del proyecto y comprueba que no nos indica nada del seguimiento de dichos archivos.
