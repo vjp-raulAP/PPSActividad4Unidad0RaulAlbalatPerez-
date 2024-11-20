@@ -19,7 +19,7 @@ color.interactive=auto
 color.diff=auto
 ~~~ 
 
-![](images/imagen1gloval.png)
+![](imagenes/imagen1gloval.png)
 
 ## Creación de Proyecto y repositorio
 
@@ -29,7 +29,7 @@ Creo un nuevo repositorio público con nombre **PPSActividad4Unidad0RaulAlbalatP
 
 Sigue las indicaciones de github para crear tu nuevo repositorio en linea de comandos, esto es:
 
-![](imagenes/crearrepositorio4.png)
+
 
 Viene a ser como esto, pero cambiando el nombre de usuario y de repositorio:
 
@@ -42,22 +42,25 @@ git branch -M main
 git remote add origin git@github.com:vjp-raulAP/PPSActividad4Unidad0RaulAlbalatPerez-.git
 git push -u origin main
 ~~~
+![](imagenes/crearrepositorio4.png)
+
+
 ---
 ## Iniciando Proyecto 
 
 
 1. Haz un listado en forma de arbol (tree -a) de todos los archivos del directorio.
 	+ En la imagen aparece un listado de las carpetas creadas y las ramas creadas
-![](imagenes/tree.png)
+  ![](imagenes/tree.png)
 
 
-2. Crea un archivo con nombre README (si no existe todavía) y lo añades al proyecto.
-![](imagenes/iniciandoproyecto2.png)
+2. Crea un archivo con nombre** README** (si no existe todavía) y lo añades al proyecto.
+  ![](imagenes/iniciandoproyecto2.png)
  
 
 3. Comprueba el estado de git (`git status -s` o `git status --short``. 
 
-![](imagenes/iniciandoproyecto3.png)
+  ![](imagenes/iniciandoproyecto3.png)
 
 4. Escribe en él una descripción de la actividad y vuelves a comprobar su estado.
 ![](imagenes/iniciandoproyecto4.png)
@@ -67,21 +70,24 @@ git push -u origin main
 
 
 1. Crea una carpeta con nombre** Excluded**. En ella vamos a colocar la documentación que no queremos que sea rastreada y subida al repositorio.
-+ Creo la carpeta **Excluded** dentro de 
++ Creo la carpeta **Excluded** dentro del fichero del repositorio de la práctica
+ 
 ![](imagenes/ignorandoarchivos1.png)
 
 2. Para comprobar que funciona crea algún archivo vacío allí y también crea un archivo con nombre excluido.txt en el directorio principal del repositorio.
 
 ![](imagenes/ignorandoarchivos2.png)
+
 ![](imagenes/ignorandoarchivos22.png)
 
-3. Crea un archivo con nombre .gitignore en el cual vamos a poner los archivos y directorios que no queremos que se rastreen.
+3. Crea un archivo con nombre **.gitignore** en el cual vamos a poner los archivos y directorios que no queremos que se rastreen.
 
 ![](imagenes/ignorandoarchivos3.png)
 
 
 
-4. Indica en el** .gitignore** que los archivos con extensión .txt y el directorio Excluded no deben de ser rastreados ni sincronizados..
+4. Indica en el** .gitignore** que los archivos con extensión** .txt** y el directorio **Excluded** no deben de ser rastreados ni sincronizados..
++ En gitignore se encontrará los archivos de textos que no se verán 
 ![](imagenes/ignorandoarchivos33.png)
 
 5. Comprueba el estado del proyecto y comprueba que no nos indica nada del seguimiento de dichos archivos.
@@ -118,29 +124,38 @@ Dentro de nuestro directorio de practica 4 nos creamos el archivo `touch index.h
 
 
 1. En un nueva pestaña de terminal y en el mismo directorio, ejecuta php -S 0:8080 para lanzar un servidor con la página html que has creado.
+
 ![](imagenes/creacionservidorphp1.png)
 2. Visualiza la página creada Puedes acceder a ella en tu navegador en el puerto 8080 de tu equipo: [](http://localhost:8080)
+
 ![](imagenes/creacionservidorphp2.png)
 ![](imagenes/creacionservidorphp22.png)
 
 ## Seguimos Trabajando con Git
 
-1. Haz una copia del archivo local index.html con el nombre index.html.save. Modifica el fichero index.html para que cambie el texto mostrado en la página web.
-![](imagenes/seguimostrabgit1.png)
+1. Haz una copia del archivo local** index.html** con el nombre** index.html.save.** Modifica el fichero index.html para que cambie el texto mostrado en la página web.
+
+ ![](imagenes/seguimostrabgit1.png)
 
 2. Verifica estado del proyecto.
-![](imagenes/seguimostrabgit2.png)
-Esto indica que index.html.save es un archivo nuevo no añadido al control de versiones.
+
+ ![](imagenes/seguimostrabgit2.png)
+
++ Esto indica que index.html.save es un archivo nuevo no añadido al control de versiones.
 
 3. Comprueba las diferencias de los archivos que no han sido añadidos (``git diff``)
 
 ![](imagenes/seguimostrabgit3.png)
-Si index.html.save es idéntico a index.html, no verás diferencias. Si introduces cambios en index.html.save, este comando te mostrará los cambios.
++ Si index.html.save es idéntico a index.html, no verás diferencias. Si introduces cambios en index.html.save, este comando te mostrará los cambios.
+
 4. Refresca navegador para comprobar que ha cambiado el contenido de nuestra página web.
+ 
 ![](imagenes/seguimostrabgit3.png)
 
 5.  Vuelve a la versión anterior del archivo index.html (git restore).
+ 
 ![](imagenes/seguimostrabgit5.png)
+
 6. Vuelve a refrescar navegador para ver como vuelve a versión inicial.
 
 ![](imagenes/seguimostrabgit6.png)
@@ -149,11 +164,11 @@ Si index.html.save es idéntico a index.html, no verás diferencias. Si introduc
 Eliminar index.html (aunque en realidad no es necesario eliminarlo antes de renombrarlo, Git lo maneja automáticamente cuando usamos git mv)
 
 
-![](imagenes/seguimostrabgit7.png)
+ ![](imagenes/seguimostrabgit7.png)
 
 Renombra index.html.save a index.html con el comando git mv:
 
-![](imagenes/seguimostrabgit72.png)
+ ![](imagenes/seguimostrabgit72.png)
 
 8. Mira el estado del proyecto y confirma todos los cambios.
 
@@ -173,10 +188,12 @@ comprobamos que se han modificado los cambios
 1. Mira la página de (Git Book sobre los comandos git log)[https://git-scm.com/book/es/v2/Fundamentos-de-Git-Ver-el-Historial-de-Confirmaciones]
 2. Muestra los logs 
 
-Para ver los log de todos los commit usamos git log
-![](imagenes/gitlog2.png)
++ Para ver los log de todos los commit usamos git log
+ ![](imagenes/gitlog2.png)
+
 3. Muestra los logs de los últimos 3 commits
-![](imagenes/gitlog3.png)
+
+ ![](imagenes/gitlog3.png)
 
 4. Muestra los logs utilizando el modificador ``--pretty`
 --pretty: Si quieres ver los logs en un formato más amigable que muestre solo los mensajes de commit, puedes usar --pretty con el formato "%h %s %cr" que muestra el hash corto del commit, el mensaje del commit y la fecha de cambio:
@@ -184,39 +201,49 @@ Para ver los log de todos los commit usamos git log
 
 5. Muestra los logs de los últimos 2 commits donde se vean las diferencias de cada una de las entradas.
 Este comando te mostrará una lista de archivos modificados junto con los nombres de los archivos y el estado de los cambios.
-![](imagenes/gitlog5.png)
+
+ ![](imagenes/gitlog5.png)
+
 6. Muestra los logs de las modificaciones realizadas en el último día
-Esto te mostrará los commits que ocurrieron dentro del último día desde la fecha actual.
++ Esto te mostrará los commits que ocurrieron dentro del último día desde la fecha actual.
+ 
 ![](imagenes/gitlog6.png)
 
 
 ## Ramas
 
 1. Lista las ramas existentes.
-Para listar las ramas existentes usamos git branch
-![](imagenes/ramas1.png)
++ Para listar las ramas existentes usamos git branch
+ 
+ ![](imagenes/ramas1.png)
 
 2. Crea una nueva rama con nombre Vers1 a partir de la rama actual.
-Para crear una nueva rama llamada Vers1 desde la rama actual y cambiar a esa nueva rama, utilizamos: git checkout -b Vers1
+
++ Para crear una nueva rama llamada Vers1 desde la rama actual y cambiar a esa nueva rama, utilizamos: git checkout -b Vers1
 ![](imagenes/ramas2.png)
+
 Este comando:
    +  Crea una nueva rama llamada Vers1.
    +  Te cambia automáticamente a la nueva rama Vers1
 
 
 3. Haz una modificación del index.html y guardas modificaciones.
-hacemos la modificación del index.html
++ Hacemos la modificación del index.html
 ![](imagenes/ramas3.png)
-Y hacemos un git status para verificar el estado de los cambios
++ Y hacemos un git status para verificar el estado de los cambios
+
 ![](imagenes/ramas31.png)
-Hacemos un git add y un commit para guardar los cambios
++ Hacemos un git add y un commit para guardar los cambios
+
 ![](imagenes/ramas32.png) 
 
 
 4. Sube los cambios al respositorio remoto a la rama Vers1 `git push origin Vers1` (En este caso podemos ver cómo el index.html de la rama `m̀ain` y `Vers1` son diferentes.
-subimos los cambios a la rama remota Vers1 usando el siguiente comando:git push origin Vers1
-![](imagenes/ramas4.png)
-Comprobamos que se ha guardado en la rama nueva los cambios.
++ Subimos los cambios a la rama remota Vers1 usando el siguiente comando:git push origin Vers1
+
+ ![](imagenes/ramas4.png)
++ Comprobamos que se ha guardado en la rama nueva los cambios.
+
 ![](imagenes/ramas41.png)
 
 
